@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FX Augment Demo - Audio Comparison</title>
+    <style>
+        /* Markdown-style black and white theme */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fff;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+            font-size: 2.2em;
+            font-weight: 600;
+        }
+
+        h2 {
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+            font-weight: 600;
+            color: #333;
+        }
+
+        p {
+            margin-bottom: 15px;
+            color: #666;
+        }
+
+        /* Table styling */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+            vertical-align: top;
+        }
+
+        th {
+            background-color: #f8f9fa;
+            font-weight: 600;
+            border-bottom: 2px solid #333;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+
+        tr:hover {
+            background-color: #f0f0f0;
+        }
+
+        /* Audio player styling */
+        audio {
+            width: 100%;
+            height: 32px;
+            margin: 5px 0;
+        }
+
+        audio::-webkit-media-controls-panel {
+            background-color: #f8f9fa;
+        }
+
+        /* Version labels */
+        .version-label {
+            font-weight: 600;
+            font-size: 0.9em;
+            color: #666;
+            margin-bottom: 5px;
+        }
+
+        .stem-name {
+            font-weight: 600;
+            color: #333;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            
+            table {
+                font-size: 0.9em;
+            }
+            
+            th, td {
+                padding: 8px;
+            }
+        }
+
+        /* Code-like styling for file names */
+        code {
+            background-color: #f8f9fa;
+            padding: 2px 4px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Fx Augment Demo - Audio Comparison</h1>
+    
+    <p>This demo showcases the progression of audio stems through different processing stages:</p>
+    <ul>
+        <li><strong>DRY_STEMS</strong> - Original, unprocessed audio stems</li>
+        <li><strong>DRY_STEMS_NORM</strong> - Normalized audio stems</li>
+        <li><strong>DRY_STEMS_NORM_AUGMENT</strong> - Normalized and augmented stems with effects processing</li>
+    </ul>
+
+    <h2>Audio Stems Comparison</h2>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Stem</th>
+                <th>Original (DRY_STEMS)</th>
+                <th>Normalized (DRY_STEMS_NORM)</th>
+                <th>Augmented (DRY_STEMS_NORM_AUGMENT)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="stem-name">STEM_02</td>
+                <td>
+                    <div class="version-label">Original</div>
+                    <audio controls preload="metadata">
+                        <source src="static/DRY_STEMS/AcDc_BackInBlack_STEM_02.flac" type="audio/flac">
+                    </audio>
+                </td>
+                <td>
+                    <div class="version-label">Normalized</div>
+                    <audio controls preload="metadata">
+                        <source src="static/DRY_STEMS_NORM/AcDc_BackInBlack_STEM_02.flac" type="audio/flac">
+                    </audio>
+                </td>
+                <td>
+                    <div class="version-label">Augmented</div>
+                    <audio controls preload="metadata">
+                        <source src="static/DRY_STEMS_NORM_AUGMENT/AcDc_BackInBlack_STEM_02.flac" type="audio/flac">
+                    </audio>
+                </td>
+            </tr>
+            
+            <tr>
+                <td class="stem-name">STEM_03</td>
+                <td>
+                    <div class="version-label">Original</div>
+                    <audio controls preload="metadata">
+                        <source src="static/DRY_STEMS/AcDc_BackInBlack_STEM_03.flac" type="audio/flac">
+                    </audio>
+                </td>
+                <td>
+                    <div class="version-label">Normalized</div>
+                    <audio controls preload="metadata">
+                        <source src="static/DRY_STEMS_NORM/AcDc_BackInBlack_STEM_03.flac" type="audio/flac">
+                    </audio>
+                </td>
+                <td>
+                    <div class="version-label">Augmented</div>
+                    <audio controls preload="metadata">
+                        <source src="static/DRY_STEMS_NORM_AUGMENT/AcDc_BackInBlack_STEM_03.flac" type="audio/flac">
+                    </audio>
+                </td>
+            </tr>
+            
+            <tr>
+                <td class="stem-name">STEM_04</td>
+                <td>
+                    <div class="version-label">Original</div>
+                    <audio controls preload="metadata">
+                        <source src="static/DRY_STEMS/AcDc_BackInBlack_STEM_04.flac" type="audio/flac">
+                    </audio>
+                </td>
+                <td>
+                    <div class="version-label">Normalized</div>
+                    <audio controls preload="metadata">
+                        <source src="static/DRY_STEMS_NORM/AcDc_BackInBlack_STEM_04.flac" type="audio/flac">
+                    </audio>
+                </td>
+                <td>
+                    <div class="version-label">Augmented</div>
+                    <audio controls preload="metadata">
+                        <source src="static/DRY_STEMS_NORM_AUGMENT/AcDc_BackInBlack_STEM_04.flac" type="audio/flac">
+                    </audio>
+                </td>
+            </tr>
+            
+            <tr>
+                <td class="stem-name">STEM_05</td>
+                <td>
+                    <div class="version-label">Original</div>
+                    <audio controls preload="metadata">
+                        <source src="static/DRY_STEMS/AcDc_BackInBlack_STEM_05.flac" type="audio/flac">
+                    </audio>
+                </td>
+                <td>
+                    <div class="version-label">Normalized</div>
+                    <audio controls preload="metadata">
+                        <source src="static/DRY_STEMS_NORM/AcDc_BackInBlack_STEM_05.flac" type="audio/flac">
+                    </audio>
+                </td>
+                <td>
+                    <div class="version-label">Augmented</div>
+                    <audio controls preload="metadata">
+                        <source src="static/DRY_STEMS_NORM_AUGMENT/AcDc_BackInBlack_STEM_05.flac" type="audio/flac">
+                    </audio>
+                </td>
+            </tr>
+            
+            <tr>
+                <td class="stem-name">STEM_06</td>
+                <td>
+                    <div class="version-label">Original</div>
+                    <audio controls preload="metadata">
+                        <source src="static/DRY_STEMS/AcDc_BackInBlack_STEM_06.flac" type="audio/flac">
+                    </audio>
+                </td>
+                <td>
+                    <div class="version-label">Normalized</div>
+                    <audio controls preload="metadata">
+                        <source src="static/DRY_STEMS_NORM/AcDc_BackInBlack_STEM_06.flac" type="audio/flac">
+                    </audio>
+                </td>
+                <td>
+                    <div class="version-label">Augmented</div>
+                    <audio controls preload="metadata">
+                        <source src="static/DRY_STEMS_NORM_AUGMENT/AcDc_BackInBlack_STEM_06.flac" type="audio/flac">
+                    </audio>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>About This Demo</h2>
+    <p>This demonstration showcases the audio processing pipeline for the track "Back in Black" by AC/DC. Each row represents a different stem (isolated instrument or vocal track), and you can compare how the audio changes through the processing stages.</p>
+    
+    <p><strong>Note:</strong> Your browser must support FLAC audio playback for the audio players to work properly. Most modern browsers support FLAC natively.</p>
+</body>
+</html>
