@@ -120,9 +120,10 @@
     
     <p>This demo showcases the progression of audio stems through different processing stages:</p>
     <ul>
-        <li><strong>DRY_STEMS</strong> - Original, unprocessed audio stems</li>
-        <li><strong>DRY_STEMS_NORM</strong> - Normalized audio stems</li>
-        <li><strong>DRY_STEMS_NORM_AUGMENT</strong> - Normalized and augmented stems with effects processing</li>
+        <li><strong>ORIGINAL_STEMS</strong> - Original audio stems, processed from engineer</li>
+        <li><strong>DRY_STEMS</strong> - Linear Sum of RAWs, unprocessed audio stems</li>
+        <li><strong>DRY_STEMS + NORM</strong> - Normalized audio stems</li>
+        <li><strong>DRY_STEMS + NORM + AUGMENT</strong> - Normalized and augmented stems with effects processing</li>
     </ul>
 
     <h2>Audio Stems Comparison</h2>
@@ -131,16 +132,51 @@
         <thead>
             <tr>
                 <th>Stem</th>
-                <th>Original (DRY_STEMS)</th>
+                <th>Original (ORIGINAL_STEMS)</th>
+                <th>Linear Sum of RAWs (DRY_STEMS)</th>
                 <th>Normalized (DRY_STEMS_NORM)</th>
                 <th>Augmented (DRY_STEMS_NORM_AUGMENT)</th>
             </tr>
         </thead>
         <tbody>
             <tr>
+                <td class="stem-name">STEM_01</td>
+                <td>
+                    <div class="version-label">Original</div>
+                    <audio controls preload="metadata">
+                        <source src="static/ORIGINAL_STEMS/AcDc_BackInBlack_STEM_01.wav" type="audio/wav">
+                    </audio>
+                </td>
+                <td>
+                    <div class="version-label">Linear Sum of RAWs</div>
+                    <audio controls preload="metadata">
+                        <source src="static/DRY_STEMS/AcDc_BackInBlack_STEM_01.flac" type="audio/flac">
+                    </audio>
+                </td>
+                <td>
+                    <div class="version-label">Normalized</div>
+                    <audio controls preload="metadata">
+                        <source src="static/DRY_STEMS_NORM/AcDc_BackInBlack_STEM_01.flac" type="audio/flac">
+                    </audio>
+                </td>
+                <td>
+                    <div class="version-label">Augmented</div>
+                    <audio controls preload="metadata">
+                        <source src="static/DRY_STEMS_NORM_AUGMENT/AcDc_BackInBlack_STEM_01.flac" type="audio/flac">
+                    </audio>
+                </td>
+            </tr>
+            
+            <tr>
                 <td class="stem-name">STEM_02</td>
                 <td>
                     <div class="version-label">Original</div>
+                    <audio controls preload="metadata">
+                        <source src="static/ORIGINAL_STEMS/AcDc_BackInBlack_STEM_02.wav" type="audio/wav">
+                    </audio>
+                </td>
+                <td>
+                    <div class="version-label">Linear Sum of RAWs</div>
                     <audio controls preload="metadata">
                         <source src="static/DRY_STEMS/AcDc_BackInBlack_STEM_02.flac" type="audio/flac">
                     </audio>
@@ -164,6 +200,12 @@
                 <td>
                     <div class="version-label">Original</div>
                     <audio controls preload="metadata">
+                        <source src="static/ORIGINAL_STEMS/AcDc_BackInBlack_STEM_03.wav" type="audio/wav">
+                    </audio>
+                </td>
+                <td>
+                    <div class="version-label">Linear Sum of RAWs</div>
+                    <audio controls preload="metadata">
                         <source src="static/DRY_STEMS/AcDc_BackInBlack_STEM_03.flac" type="audio/flac">
                     </audio>
                 </td>
@@ -185,6 +227,12 @@
                 <td class="stem-name">STEM_04</td>
                 <td>
                     <div class="version-label">Original</div>
+                    <audio controls preload="metadata">
+                        <source src="static/ORIGINAL_STEMS/AcDc_BackInBlack_STEM_04.wav" type="audio/wav">
+                    </audio>
+                </td>
+                <td>
+                    <div class="version-label">Linear Sum of RAWs</div>
                     <audio controls preload="metadata">
                         <source src="static/DRY_STEMS/AcDc_BackInBlack_STEM_04.flac" type="audio/flac">
                     </audio>
@@ -208,6 +256,12 @@
                 <td>
                     <div class="version-label">Original</div>
                     <audio controls preload="metadata">
+                        <source src="static/ORIGINAL_STEMS/AcDc_BackInBlack_STEM_05.wav" type="audio/wav">
+                    </audio>
+                </td>
+                <td>
+                    <div class="version-label">Linear Sum of RAWs</div>
+                    <audio controls preload="metadata">
                         <source src="static/DRY_STEMS/AcDc_BackInBlack_STEM_05.flac" type="audio/flac">
                     </audio>
                 </td>
@@ -229,6 +283,12 @@
                 <td class="stem-name">STEM_06</td>
                 <td>
                     <div class="version-label">Original</div>
+                    <audio controls preload="metadata">
+                        <source src="static/ORIGINAL_STEMS/AcDc_BackInBlack_STEM_06.wav" type="audio/wav">
+                    </audio>
+                </td>
+                <td>
+                    <div class="version-label">Linear Sum of RAWs</div>
                     <audio controls preload="metadata">
                         <source src="static/DRY_STEMS/AcDc_BackInBlack_STEM_06.flac" type="audio/flac">
                     </audio>
